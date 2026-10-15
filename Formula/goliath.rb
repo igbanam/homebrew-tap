@@ -5,21 +5,21 @@
 class Goliath < Formula
   desc "Polylith-style workspace management for Go"
   homepage "https://github.com/igbanam/goliath"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/igbanam/goliath/releases/download/v0.1.0/goliath_0.1.0_darwin_amd64.tar.gz"
-      sha256 "94c6d30125b0d7bbb8e005d678bd934fe980429542cdea2eaf7b097095840536"
+      url "https://github.com/igbanam/goliath/releases/download/v0.2.0/goliath_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a291626232608fc28aa36b76cb521475eb6ad2a5b2dd3103fa818932386d02d4"
 
       define_method(:install) do
         bin.install "goliath"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/igbanam/goliath/releases/download/v0.1.0/goliath_0.1.0_darwin_arm64.tar.gz"
-      sha256 "520ad1c856d334c9470058462dc6caff371792e3beeeff94d4a0b90991cb2885"
+      url "https://github.com/igbanam/goliath/releases/download/v0.2.0/goliath_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a84f9c228f2d3a4178eaa47cb93105a70571738f8e4a94b827977a3a373fb771"
 
       define_method(:install) do
         bin.install "goliath"
@@ -29,15 +29,15 @@ class Goliath < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/igbanam/goliath/releases/download/v0.1.0/goliath_0.1.0_linux_amd64.tar.gz"
-      sha256 "4c47855b92f0c94d9c14f1ad58543b5d5faa3b302ee543c7a8a407efbd0c1cc9"
+      url "https://github.com/igbanam/goliath/releases/download/v0.2.0/goliath_0.2.0_linux_amd64.tar.gz"
+      sha256 "3b6c0386bc9f0d724e930cfd4f40c45b536a7075a9ac4fa151a456f9dbe3c8bd"
       define_method(:install) do
         bin.install "goliath"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/igbanam/goliath/releases/download/v0.1.0/goliath_0.1.0_linux_arm64.tar.gz"
-      sha256 "ba2f6da847d8525b472a6cabf2a70a9ba24df46a4e77223a6431d2f1bac7a7a7"
+      url "https://github.com/igbanam/goliath/releases/download/v0.2.0/goliath_0.2.0_linux_arm64.tar.gz"
+      sha256 "9c0aedbeaf4538d23e4363d095fc67ff2f5a9651a2cf01b0fa77306ed9bed1b0"
       define_method(:install) do
         bin.install "goliath"
       end
